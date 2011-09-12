@@ -1,3 +1,10 @@
+"配置中 inoremap 开头的表示后面的设置针对的是插入模式下的
+"如 inoremap <a-c>w <ESC>ciw 表示的是在插入模式下按下 alt + c 后 按w
+"删除光标下的单词
+"<a-c>w 表示设置的按键 空格后面跟的表示要执行的操作 
+" nnoremap  表示的是 正常模式下的设置
+" vmap  表示的是 选择状态下的设置
+
 "comment above, for input chinese word in vim
 set encoding=utf-8
 "if !has("gui")
@@ -18,19 +25,11 @@ language messages zh_CN.utf-8
 
 set ambiwidth=double
 
-
-
-
 "禁用vi兼容模式
 set nocompatible
 
 "让配置文件自动加载
 autocmd! bufwritepost _vimrc source %
-
-
-
-
-
 
 "配色方案
 colorscheme slate
@@ -143,45 +142,20 @@ autocmd GUIEnter * simalt ~x
 set wildmenu
 
 "自动括号补全
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {}<ESC>i
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-"":inoremap < <><ESC>i
-:inoremap > <c-r>=ClosePair('>')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-:inoremap <a-j> <ESC>o
-:inoremap <a-k> <ESC>O
-:inoremap <a-e> <ESC>$a
-:inoremap <a-q> <ESC>^i
-
-
-
-"实现括号的自动配对后防止重复输入），适用python
-function! ClosePair(char)
-    if getline('.')[col('.') - 1] == a:char
-        return "\<Right>"
-    else
-        return a:char
-    endif
-endf
-
-"显示状态栏
-set laststatus=2
-
-"状态栏显示的信息
-set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
+inoremap ( ()<ESC>i
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap { {}<ESC>i
+inoremap } <c-r>=ClosePair('}')<CR>
+inoremap [ []<ESC>i
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+inoremap <a-j> <ESC>o
+inoremap <a-k> <ESC>O
+inoremap <a-e> <ESC>$a
+inoremap <a-q> <ESC>^i
 
 " 在输入模式下移动光标，彻底抛弃方向键
-inoremap <C-A-h> <left>
-inoremap <C-A-j> <C-o>gms
-inoremap <C-A-k> <C-o>gmw 
-inoremap <C-A-l> <Right>
-inoremap <M-h> <C-o>b
-inoremap <M-l> <C-o>w
 inoremap <a-a> <left>
 inoremap <a-d> <right>
 inoremap <a-w> <ESC>gka
@@ -216,6 +190,23 @@ inoremap <a-f> <ESC>:w<cr>a
 inoremap <a-o> <ESC>gkJa
 inoremap <a-m> <ESC>ld$a
 inoremap <a-n> <ESC>ld^i
+
+
+"实现括号的自动配对后防止重复输入），适用python
+function! ClosePair(char)
+    if getline('.')[col('.') - 1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
+endf
+
+"显示状态栏
+set laststatus=2
+
+"状态栏显示的信息
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
+
 
 "映射长行上下移动快捷键
 nmap j gj
