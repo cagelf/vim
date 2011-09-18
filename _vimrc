@@ -5,7 +5,7 @@
 " nnoremap  表示的是 正常模式下的设置
 " vmap  表示的是 选择状态下的设置
 
-"comment above, for input chinese word in vim
+"中文呢编码支持
 set encoding=utf-8
 "if !has("gui")
 "    set termencoding=cp936
@@ -45,8 +45,11 @@ set history =1000
 "设定在任何模式下鼠标都可用
 set mouse=
 
+"设置命令行的高度为1
+set cmdheight=1
 
-
+"设置状态栏标尺
+set ruler
 
 "设定退格键和delete键
 set backspace=indent,eol,start
@@ -191,7 +194,6 @@ inoremap <a-o> <ESC>gkJa
 inoremap <a-m> <ESC>ld$a
 inoremap <a-n> <ESC>ld^i
 
-
 "实现括号的自动配对后防止重复输入），适用python
 function! ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
@@ -207,24 +209,29 @@ set laststatus=2
 "状态栏显示的信息
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
 
-
 "映射长行上下移动快捷键
 nmap j gj
 nmap k gk
 
 "改变窗口大小快捷键
-nmap <up> <C-w>+10
-nmap <down> <C-w>-10
-nmap <left> <C-w>>10
-nmap <right> <C-w><10
+nmap <a-k> <C-w>+10
+nmap <a-j> <C-w>-10
+nmap <a-h> <C-w>>10
+nmap <a-l> <C-w><10
 nmap <a-p> "+p
+
+"正常模式下窗口切换
+nmap <a-w> <c-w>k
+nmap <a-d> <c-w>l
+nmap <a-s> <c-w>j
+nmap <a-a> <c-w>h
+nmap <a-x> <c-w>>1000
 
 "映射系统剪贴板的复制和粘贴
 vmap <A-y> "+y
 vmap <A-p> "+p
 
 " 让 Tohtml 产生有 CSS 语法的 html
-" syntax/2html.vim，可以用:runtime! syntax/2html.vim
 let html_use_css=1
 
 " 设置字典 ~/.vim/dict/文件的路径
@@ -233,13 +240,19 @@ autocmd filetype php set dictionary=F:/Vim/dict/php.dict
 autocmd filetype html set dictionary=F:/Vim/dict/html.dict
 autocmd filetype css set dictionary=F:/Vim/dict/css.dict
 
-
 "选中状态下 Ctrl+c 复制
 "vmap <C-c> "+y
 
 "自动补全插件-neocomplcache
 "let g:neocomplcache_enable_at_startup=1
 
+"隐藏垂直方向滚动条"
+if has("gui_running")
+	set guioptions-=l
+	set guioptions-=L
+	set guioptions-=r
+	set guioptions-=R
+endif
 
 "菜单栏隐藏与显示切换
 set guioptions-=m
