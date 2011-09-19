@@ -193,6 +193,8 @@ inoremap <a-f> <ESC>:w<cr>a
 inoremap <a-o> <ESC>gkJa
 inoremap <a-m> <ESC>ld$a
 inoremap <a-n> <ESC>ld^i
+inoremap <c-k> <c-x><c-k>
+inoremap <c-f> <c-x><c-f>
 
 "实现括号的自动配对后防止重复输入），适用python
 function! ClosePair(char)
@@ -225,7 +227,25 @@ nmap <a-w> <c-w>k
 nmap <a-d> <c-w>l
 nmap <a-s> <c-w>j
 nmap <a-a> <c-w>h
-nmap <a-x> <c-w>>1000
+nmap <a-\> <c-w>>1000
+
+"跳到行尾和行首
+nmap <a-q> I
+nmap <a-e> A
+nmap <a-n> ^
+nmap <a-m> $
+nmap <a-c> ct
+
+"注释快捷键
+nmap <a-x> \cc
+nmap <a-r> \cu
+vmap <a-r> \cu
+vmap <a-v> \cs
+vmap <a-b> \cm
+vmap <a-n> ^
+vmap <a-m> $
+vmap <a-q> I
+vmap <a-e> A
 
 "映射系统剪贴板的复制和粘贴
 vmap <A-y> "+y
