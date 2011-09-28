@@ -235,6 +235,8 @@ nmap <a-e> A
 nmap <a-n> ^
 nmap <a-m> $
 nmap <a-c> ct
+nmap <a-y> "+
+nmap <a-f> zR
 
 "注释快捷键
 nmap <a-x> \cc
