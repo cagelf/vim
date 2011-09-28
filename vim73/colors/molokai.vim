@@ -74,7 +74,7 @@ hi PreCondit       guifg=#A6E22E               gui=none
 hi PreProc         guifg=#A6E22E
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=none
-hi Search          guifg=#FFFFFF guibg=#455354
+hi Search          guifg=#FFFFFF guibg=#FF0000
 " marks column
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=none
@@ -88,8 +88,8 @@ if has("spell")
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
 hi Statement       guifg=#F92672               gui=none
-hi StatusLine      guifg=#455354 guibg=fg
-hi StatusLineNC    guifg=#808080 guibg=#080808
+hi StatusLine      guifg=#222222 guibg=fg
+hi StatusLineNC    guifg=#222222 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=none
 hi Structure       guifg=#66D9EF
 hi Tag             guifg=#F92672               gui=none
@@ -114,12 +114,12 @@ if s:molokai_original == 1
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
-   hi Normal          guifg=#F8F8F2 guibg=#111111
+   hi Normal          guifg=#D3D6DF guibg=#080808
    hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#293739
+   hi CursorLine                    guibg=#151515
    hi CursorColumn                  guibg=#293739
-   hi LineNr          guifg=#BCBCBC guibg=#232526
-   hi NonText         guifg=#BCBCBC guibg=#232526
+   hi LineNr          guifg=#BCBCBC guibg=#151515
+   hi NonText         guifg=#BCBCBC guibg=#111111
 end
 
 "
