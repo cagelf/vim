@@ -195,6 +195,7 @@ inoremap <a-m> <ESC>ld$a
 inoremap <a-n> <ESC>ld^i
 inoremap <c-k> <c-x><c-k>
 inoremap <c-f> <c-x><c-f>
+inoremap <a-i> <c-y>
 
 "实现括号的自动配对后防止重复输入），适用python
 function! ClosePair(char)
@@ -234,18 +235,34 @@ nmap <a-q> I
 nmap <a-e> A
 nmap <a-n> ^
 nmap <a-m> $
-nmap <a-c> ct
-nmap <a-y> "+
 nmap <a-f> zR
 
+"映射ct快捷键
+nmap <a-x> ct
+nmap <a-y> "+
+nmap <a-v> V
+nmap <a-g> G
+nmap d<a-g> dG
+nmap d<a-n> d^
+nmap d<a-m> d$
+nmap d<a--> df
+nmap d<a-b> dF
+nmap <a-8> *
+nmap <a-5> %
+nmap <a-t> V\5
+nmap <a-o> \5
+nmap <tab> <c-tab>
+
 "注释快捷键
-nmap <a-x> \cc
+nmap <a-c> \cc
 nmap <a-r> \cu
 vmap <a-r> \cu
-vmap <a-v> \cs
+vmap <a-c> \cs
 vmap <a-b> \cm
 vmap <a-n> ^
 vmap <a-m> $
+
+"块级插入时有用
 vmap <a-q> I
 vmap <a-e> A
 
