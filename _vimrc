@@ -138,7 +138,7 @@ let javascript_enable_domhtmlcss=1
 "打开javascript折叠
 let b:javascript_fold=1
 
-"窗口最大化
+"窗口最大化,只适合windows
 autocmd GUIEnter * simalt ~x
 
 "命令行补全
@@ -261,6 +261,7 @@ vmap <a-c> \cs
 vmap <a-b> \cm
 vmap <a-n> ^
 vmap <a-m> $
+vmap <a-g> G
 
 "块级插入时有用
 vmap <a-q> I
@@ -281,6 +282,9 @@ autocmd filetype css set dictionary=F:/Vim/dict/css.dict
 
 "选中状态下 Ctrl+c 复制
 "vmap <C-c> "+y
+
+"jquery的语法高亮
+au BufRead,BufNewFile *.js set filetype=javascript syntax=jquery
 
 "自动补全插件-neocomplcache
 "let g:neocomplcache_enable_at_startup=1
