@@ -196,6 +196,7 @@ inoremap <a-n> <ESC>ld^i
 inoremap <c-k> <c-x><c-k>
 inoremap <c-f> <c-x><c-f>
 inoremap <a-i> <c-y>
+inoremap <a-,> <c-w>
 
 "实现括号的自动配对后防止重复输入），适用python
 function! ClosePair(char)
@@ -235,7 +236,7 @@ nmap <a-q> I
 nmap <a-e> A
 nmap <a-n> ^
 nmap <a-m> $
-nmap <a-f> zR
+nmap <a-i> zR
 
 "映射ct快捷键
 nmap <a-x> ct
@@ -262,14 +263,23 @@ vmap <a-b> \cm
 vmap <a-n> ^
 vmap <a-m> $
 vmap <a-g> G
+vmap <a-o> \5
 
 "块级插入时有用
 vmap <a-q> I
 vmap <a-e> A
 
+"重复find操作
+nmap , ;
+vmap , ;
+
 "映射系统剪贴板的复制和粘贴
 vmap <A-y> "+y
 vmap <A-p> "+p
+
+"选中状态下移动单行
+vmap j gj
+vmap k gk
 
 " 让 Tohtml 产生有 CSS 语法的 html
 let html_use_css=1
