@@ -69,6 +69,7 @@ set cursorline
 
 "tab宽度为四个字符
 set tabstop=4
+set expandtab
 
 "开启新行时自动智能缩进
 set smartindent
