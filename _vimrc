@@ -242,7 +242,7 @@ nmap <a-m> $
 nmap <a-i> zR
 
 "映射ct快捷键
-nmap <a-x> ct
+nmap <a-x> <c-v>
 nmap <a-y> "+
 nmap <a-v> V
 nmap <a-g> G
