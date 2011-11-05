@@ -69,7 +69,9 @@ set cursorline
 
 "tab宽度为四个字符
 set tabstop=4
-set expandtab
+
+"python的tab缩进转换为空格
+au BufRead,BufNewFile *.py set filetype=python expandtab
 
 "开启新行时自动智能缩进
 set smartindent
@@ -253,7 +255,7 @@ nmap <a-8> *
 nmap <a-5> %
 nmap <a-t> V\5
 nmap <a-o> \5
-nmap <tab> <c-tab>
+nmap <tab> <s-c-tab>
 
 "注释快捷键
 nmap <a-c> \cc
