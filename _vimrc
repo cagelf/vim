@@ -69,7 +69,9 @@ set cursorline
 
 "tab宽度为四个字符
 set tabstop=4
-set expandtab
+
+"python的tab缩进转换为空格
+au BufRead,BufNewFile *.py set filetype=python expandtab
 
 "开启新行时自动智能缩进
 set smartindent
@@ -291,6 +293,7 @@ autocmd filetype javascript set dictionary=F:/Vim/dict/javascript.dict
 autocmd filetype php set dictionary=F:/Vim/dict/php.dict
 autocmd filetype html set dictionary=F:/Vim/dict/html.dict
 autocmd filetype css set dictionary=F:/Vim/dict/css.dict
+autocmd filetype python set dictionary=F:/Vim/dict/python.dict
 
 "选中状态下 Ctrl+c 复制
 "vmap <C-c> "+y
