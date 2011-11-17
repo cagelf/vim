@@ -35,7 +35,7 @@ hi Conditional     guifg=#F92672               gui=none
 hi Constant        guifg=#AE81FF               gui=none
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=none
-hi Define          guifg=#66D9EF
+hi Define          guifg=#009F78
 hi Delimiter       guifg=#8F8F8F
 hi DiffAdd                       guibg=#13354A
 hi DiffChange      guifg=#89807D guibg=#4C4745
@@ -57,7 +57,7 @@ hi IncSearch       guifg=#C4BE89 guibg=#000000
 hi Keyword         guifg=#F92672               gui=none
 hi Label           guifg=#595CDF               gui=none
 hi Macro           guifg=#C4BE89               gui=none
-hi SpecialKey      guifg=#66D9EF               gui=none
+hi SpecialKey      guifg=#009F78               gui=none
 
 hi MatchParen      guifg=#000000 guibg=#FD971F gui=none
 hi ModeMsg         guifg=#595CDF
@@ -65,21 +65,21 @@ hi MoreMsg         guifg=#595CDF
 hi Operator        guifg=#F92672
 
 " complete menu
-hi Pmenu           guifg=#66D9EF guibg=#000000
+hi Pmenu           guifg=#009F78 guibg=#000000
 hi PmenuSel                      guibg=#808080
 hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#66D9EF
+hi PmenuThumb      guifg=#009F78
 
 hi PreCondit       guifg=#A6E22E               gui=none
 hi PreProc         guifg=#A6E22E
-hi Question        guifg=#66D9EF
+hi Question        guifg=#009F78
 hi Repeat          guifg=#F92672               gui=none
 hi Search          guifg=#FFFFFF guibg=#FF0000
 " marks column
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=none
 hi SpecialComment  guifg=#465457               gui=none
-hi Special         guifg=#66D9EF guibg=bg      gui=none
+hi Special         guifg=#009F78 guibg=bg      gui=none
 hi SpecialKey      guifg=#888A85               gui=none
 if has("spell")
     hi SpellBad    guisp=#FF0000 gui=undercurl
@@ -91,20 +91,20 @@ hi Statement       guifg=#F92672               gui=none
 hi StatusLine      guifg=#222222 guibg=fg
 hi StatusLineNC    guifg=#222222 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=none
-hi Structure       guifg=#66D9EF
+hi Structure       guifg=#009F78
 hi Tag             guifg=#F92672               gui=none
 hi Title           guifg=#ef5939
 hi Todo            guifg=#FFFFFF guibg=bg      gui=none
 
-hi Typedef         guifg=#66D9EF
-hi Type            guifg=#66D9EF               gui=none
+hi Typedef         guifg=#009F78
+hi Type            guifg=#009F78               gui=none
 hi Underlined      guifg=#888888               gui=underline
 
 hi VertSplit       guifg=#808080 guibg=#080808 gui=none
 hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=none
-hi WildMenu        guifg=#66D9EF guibg=#000000
+hi WildMenu        guifg=#009F78 guibg=#000000
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822

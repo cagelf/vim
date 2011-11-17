@@ -240,7 +240,7 @@ nmap <a-m> $
 nmap <a-i> zR
 
 "映射ct快捷键
-nmap <a-x> ct
+nmap <a-x> <c-v>
 nmap <a-y> "+
 nmap <a-v> V
 nmap <a-g> G
@@ -253,7 +253,7 @@ nmap <a-8> *
 nmap <a-5> %
 nmap <a-t> V\5
 nmap <a-o> \5
-nmap <tab> <c-tab>
+nmap <tab> <s-c-tab>
 
 "注释快捷键
 nmap <a-c> \cc
@@ -269,6 +269,7 @@ vmap <a-o> \5
 "块级插入时有用
 vmap <a-q> I
 vmap <a-e> A
+vmap <a-f> F
 
 "重复find操作
 nmap , ;
