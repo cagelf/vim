@@ -271,6 +271,7 @@ vmap <a-o> \5
 "块级插入时有用
 vmap <a-q> I
 vmap <a-e> A
+vmap <a-f> F
 
 "重复find操作
 nmap , ;
