@@ -289,11 +289,11 @@ vmap k gk
 let html_use_css=1
 
 " 设置字典 ~/.vim/dict/文件的路径
-autocmd filetype javascript set dictionary=F:/Vim/dict/javascript.dict
-autocmd filetype php set dictionary=F:/Vim/dict/php.dict
-autocmd filetype html set dictionary=F:/Vim/dict/html.dict
-autocmd filetype css set dictionary=F:/Vim/dict/css.dict
-autocmd filetype python set dictionary=F:/Vim/dict/python.dict
+autocmd filetype javascript set dictionary=C:/vim/dict/javascript.dict
+autocmd filetype php set dictionary=C:/vim/dict/php.dict
+autocmd filetype html set dictionary=C:/vim/dict/html.dict
+autocmd filetype css set dictionary=C:/vim/dict/css.dict
+autocmd filetype python set dictionary=C:/vim/dict/python.dict
 
 "选中状态下 Ctrl+c 复制
 "vmap <C-c> "+y
