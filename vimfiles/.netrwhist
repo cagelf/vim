@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='F:/vim'
+let g:netrw_dirhist_2='c:/xampp'
+let g:netrw_dirhist_3='c:/xampp/phpMyAdmin'
+let g:netrw_dirhist_4='c:/xampp/phpMyAdmin/libraries'
+let g:netrw_dirhist_5='C:/Documents and Settings/cage'
+let g:netrw_dirhist_6='C:/Documents and Settings/cage/桌面'
+let g:netrw_dirhist_7='c:/xampp/htdocs'
+let g:netrw_dirhist_8='c:/xampp/htdocs/waysfor'
+let g:netrw_dirhist_9='c:/xampp/htdocs/waysfor/app'
