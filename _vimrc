@@ -289,11 +289,11 @@ vmap k gk
 let html_use_css=1
 
 " 设置字典 ~/.vim/dict/文件的路径
-autocmd filetype javascript set dictionary=C:/vim/dict/javascript.dict
-autocmd filetype php set dictionary=C:/vim/dict/php.dict
-autocmd filetype html set dictionary=C:/vim/dict/html.dict
-autocmd filetype css set dictionary=C:/vim/dict/css.dict
-autocmd filetype python set dictionary=C:/vim/dict/python.dict
+autocmd filetype javascript set dictionary=D:/vim/dict/javascript.dict
+autocmd filetype php set dictionary=D:/vim/dict/php.dict
+autocmd filetype html set dictionary=D:/vim/dict/html.dict
+autocmd filetype css set dictionary=D:/vim/dict/css.dict
+autocmd filetype python set dictionary=D:/vim/dict/python.dict
 
 "选中状态下 Ctrl+c 复制
 "vmap <C-c> "+y
@@ -339,3 +339,10 @@ function! InsertHtmlTag()
         :call cursor(save_cursor[1], save_cursor[2], save_cursor[3])
 endfunction
 		inoremap > <ESC>:call InsertHtmlTag()<CR>a 
+
+
+
+set list
+set listchars=tab:\|\ 
+
+set cuc

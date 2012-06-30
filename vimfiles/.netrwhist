@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='z:'
+let g:netrw_dirhist_2='d:/xampp/htdocs/demo'
+let g:netrw_dirhist_3='D:/xampp/htdocs/ja'
+let g:netrw_dirhist_4='D:/xampp/htdocs/ja/styles'
+let g:netrw_dirhist_5='D:/xampp/htdocs/demo'
+let g:netrw_dirhist_6='D:/xampp/htdocs/nv'
+let g:netrw_dirhist_7='D:/xampp/htdocs/nv/js'

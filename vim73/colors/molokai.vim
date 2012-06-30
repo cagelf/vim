@@ -116,8 +116,8 @@ if s:molokai_original == 1
 else
    hi Normal          guifg=#D3D6DF guibg=#080808
    hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#151515
-   hi CursorColumn                  guibg=#293739
+   hi CursorLine                    guibg=#181818
+   hi CursorColumn                  guibg=#20282A
    hi LineNr          guifg=#BCBCBC guibg=#151515
    hi NonText         guifg=#BCBCBC guibg=#111111
 end
