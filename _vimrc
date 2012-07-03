@@ -342,7 +342,12 @@ endfunction
 
 
 
-set list
-set listchars=tab:\|\ 
+"set list
+"set listchars=tab:\|\ 
 
 set cuc
+
+
+"vimim插件快捷键调整
+inoremap <silent> <a-b>  <C-R>=g:vimim_onekey()<CR>
+xnoremap <silent> <a-b> y:call g:vimim_visual()<CR>
